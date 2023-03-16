@@ -92,9 +92,11 @@ body {
     display: grid;
     gap: 5px;
     grid-template-areas: 
-        'header header header'
-        'sidebar content content'
-        'footer footer footer';
+        'header header header header header'
+        'fundo11 fundo10 fundo8 fundo8 fundo1'
+        'fundo2 fundo3 fundo6 fundo4 fundo1'
+        'fundo7 fundo7 fundo9 fundo5 fundo12'
+        'footer footer footer footer footer';
 }
 
 .container div {
@@ -106,13 +108,43 @@ body {
 #header {
     grid-area: header;
 }
-#sidebar {
-    grid-area: sidebar;
+#fundo1 {
+    grid-area: fundo1;
 }
-#content {
-    grid-area: content;
+#fundo2 {
+    grid-area: fundo2;
 }
-#footer {
+#fundo3 {
+    grid-area: fundo3;
+}
+#fundo4 {
+    grid-area: fundo4;
+}
+#fundo5 {
+    grid-area: fundo5;
+}
+#fundo6 {
+    grid-area: fundo6;
+}
+#fundo7 {
+    grid-area: fundo7;
+}
+#fundo8 {
+    grid-area: fundo8;
+}
+#fundo9 {
+    grid-area: fundo9;
+}
+#fundo10 {
+    grid-area: fundo10;
+}
+#fundo11 {
+    grid-area: fundo11;
+}
+#fundo12 {
+    grid-area: fundo12;
+}
+    #footer {
     grid-area: footer;
 }
 
@@ -161,7 +193,7 @@ body {
 }
 
 /*Battlefield*/
-.fundo2 {
+.fundo2 {  
     height: 500px;
     width: 500px;
     background-color: transparent;

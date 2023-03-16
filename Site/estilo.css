@@ -54,31 +54,6 @@ body {
     background-position: 10px 50%;
     box-shadow: 2px 2px 2px 1px #1247d9;
 }
-/*Efeito Hover*/
-.item{
-    transition: .35s;
-    cursor: pointer;
-    
-
-}
-
-/**/
-.container:hover > :not(:hover){
-    opacity: .4;
-    transform: scale(0.9);
-}**/
-
-/**/
-.card {
-    display: flex;
-}
-
-.card__cover {
-    height: 20rem;
-    width: 100%;
-}
-
-
 
 .row {
     display: flex;
@@ -110,69 +85,37 @@ body {
     max-height: 64px;
 }
 
-.container-menu {
+.container {
+    background-color: #333;
+    border: red;
+    padding: 15px;
     display: grid;
-    gap: 1%;
-    grid-template-columns: repeat(22,1fr);
-    grid-template-rows: repeat(24,1fr);
+    gap: 5px;
     grid-template-areas: 
-        'a f11 f11 f11 f11 a a a a a a a a a a a a a a a a a a'
-        'a f11 f11 f11 f11 a a a a a a a f8 f8 f8 f8 f8 a a a a a'
-        'a f11 f11 f11 f11 a f10 f10 f10 f10 f10 a f8 f8 f8 f8 f8 a a a a a'
-        'a f11 f11 f11 f11 a f10 f10 f10 f10 f10 a f8 f8 f8 f8 f8 a f1 f1 f1 a'
-        'a f11 f11 f11 f11 a f10 f10 f10 f10 f10 a a a a a a a f1 f1 f1 a'
-        'a f11 f11 f11 f11 a f10 f10 f10 f10 f10 a a a a a f4 a f1 f1 f1 a'
-        'a f11 f11 f11 f11 a'
-        'a a a a a a'
-        'a a a a a a'
-        ;
+        'header header header'
+        'sidebar content content'
+        'footer footer footer';
 }
 
-#a {
-    grid-area: a;
+.container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
 }
-#f1 {
-    grid-area: f1;
+
+#header {
+    grid-area: header;
 }
-#f2 {
-    grid-area: f2;
+#sidebar {
+    grid-area: sidebar;
 }
-#f3 {
-    grid-area: f3;
+#content {
+    grid-area: content;
 }
-#f4 {
-    grid-area: f4;
+#footer {
+    grid-area: footer;
 }
-#f5 {
-    grid-area: f5;
-}
-#f6 {
-    grid-area: f6;
-}
-#f7 {
-    grid-area: f7;
-}
-#f8 {
-    grid-area: f8;
-}
-#f9 {
-    grid-area: f9;
-}
-#f10 {
-    grid-area: f10;
-}
-#f11 {
-    grid-area: f11;
-}
-#f12 {
-    grid-area: f12;
-}
-#f13 {
-    grid-area: f13;
-}
-#f14 {
-    grid-area: f14;
-}
+
 
 /*Borda da esquerda colorida dos cards*/
 .blue {
@@ -188,6 +131,9 @@ body {
 }
 
 /*Botoes do menu Gta*/
+.container div {
+    justify-content: center;
+}
 /*Mine*/
 .fundo1 {
     height: 500px;

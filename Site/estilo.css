@@ -63,7 +63,7 @@ body {
 .card {
     flex-direction: column;
     border-radius: 5px;
-    box-shadow: 7px 7px 13px 0px rgba(50, 50, 50, 0.22);
+    box-shadow: 7px 7px 13px 0px #32323238;
     padding: 30px;
     margin: 20px;
     width: 400px;
@@ -85,31 +85,39 @@ body {
     max-height: 64px;
 }
 
+/*Borda da esquerda colorida dos cards*/
+.blue {
+    border-left: 3px solid #4895ff;
+}
+
+.green {
+    border-left: 3px solid #3bb54a;
+}
+
+.red {
+    border-left: 3px solid #b3404a;
+}
+
+/*Menu*/
 .container {
-    background-color: #333;
-    border: red;
-    padding: 15px;
+    padding-left: 10%;
+    padding-right: 10%;
     display: grid;
-    gap: 5px;
     grid-template-areas: 
-        'header header header header header'
         'fundo11 fundo10 fundo8 fundo8 fundo1'
         'fundo2 fundo3 fundo6 fundo4 fundo1'
-        'fundo7 fundo7 fundo9 fundo5 fundo12'
-        'footer footer footer footer footer';
+        'fundo7 fundo7 fundo9 fundo5 fundo12';
 }
 
 .container div {
-    background-color: #ccc;
-    padding: 20px;
-    border: 1px solid blue;
-}
-
-#header {
-    grid-area: header;
+    background-color: yellowgreen;
+    border: #1247d9;
+    height: 16;
+    width: 16;
 }
 #fundo1 {
     grid-area: fundo1;
+    
 }
 #fundo2 {
     grid-area: fundo2;
@@ -144,23 +152,6 @@ body {
 #fundo12 {
     grid-area: fundo12;
 }
-    #footer {
-    grid-area: footer;
-}
-
-
-/*Borda da esquerda colorida dos cards*/
-.blue {
-    border-left: 3px solid #4895ff;
-}
-
-.green {
-    border-left: 3px solid #3bb54a;
-}
-
-.red {
-    border-left: 3px solid #b3404a;
-}
 
 /*Botoes do menu Gta*/
 .container div {
@@ -168,12 +159,7 @@ body {
 }
 /*Mine*/
 .fundo1 {
-    height: 500px;
-    width: 500px;
-    background-color: transparent;
     background: url(img/fundos/fundo1.png) no-repeat;
-    background-size: 100%;
-    background-position: 100%;
 }
 .fundo1:hover {
     transform: scale(1.1);
@@ -324,12 +310,9 @@ body {
 
 /*Gta*/
 .fundo7 {
-    height: 500px;
-    width: 500px;
-    background-color: transparent;
+    height: 100%;
+    width: 100%;
     background: url(img/fundos/fundo7.png) no-repeat;
-    background-size: 100%;
-    background-position: 100%;
 }
 .fundo7:hover {
     transform: scale(1.1);
@@ -350,12 +333,9 @@ body {
 
 /*word of warcraft*/
 .fundo8 {
-    height: 500px;
-    width: 500px;
-    background-color: transparent;
+    height: 100%;
+    width: 100%;
     background: url(img/fundos/fundo8.png) no-repeat;
-    background-size: 100%;
-    background-position: 100%;
 }
 .fundo8:hover {
     transform: scale(1.1);
@@ -458,8 +438,7 @@ body {
     width: 500px;
     background-color: transparent;
     background: url(img/fundos/fundo12.png) no-repeat;
-    background-size: 100%;
-    background-position: 100%;
+
 }
 .fundo12:hover {
     transform: scale(1.1);
@@ -474,32 +453,6 @@ body {
     background-position: 20% 50%;
 }
 .personagem12:hover {
-    transform: translate(100px, -30px);
-    transition: .95s;
-}
-
-/*Super smash bross*/
-.fundo13 {
-    height: 500px;
-    width: 500px;
-    background-color: transparent;
-    background: url(img/fundos/fundo13.png) no-repeat;
-    background-size: 100%;
-    background-position: 100%;
-}
-.fundo13:hover {
-    transform: scale(1.1);
-    transition: .95s;
-}
-.personagem13 {
-    height: 500px;
-    width: 500px;
-    background-color: transparent;
-    background: url(img/personagens/personagem13.png) no-repeat;
-    background-size: 350px;
-    background-position: 20% 50%;
-}
-.personagem13:hover {
     transform: translate(100px, -30px);
     transition: .95s;
 }
